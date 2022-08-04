@@ -1,0 +1,15 @@
+.plans-container__slider::-webkit-scrollbar {
+display: none;
+}
+.main-tables-container::-webkit-scrollbar{
+    display: none;
+}
+.footer__logo{
+    height: 80px;
+    width: 80px;
+}
+.footer__img{
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+}
