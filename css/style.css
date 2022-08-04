@@ -99,7 +99,7 @@ main{
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
-
+    background-color: #faf8f7;
 }
 .main__exchange__container .backgroundImg{
     width: 200px;
@@ -131,6 +131,25 @@ main{
     line-height: 1.6rem;
     color:#757575;
 }
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap:100px;
+    padding: 0 80px;
+}
+.main-container__card{
+    width: 100%;
+    scroll-snap-align: center;
+}
+.main-tables-container::-webkit-scrollbar {
+    background-color: var(--soft-blue);
+    height: 3px;
+  }
+.main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-blue);
+  }
 .main-currency_table{
     width: 70%;
     min-width: 235px;
@@ -392,3 +411,166 @@ main{
     line-height: 2.6rem;
     color: var(--just-white);
 }
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: #faf8f7;
+}
+.main-plans-container .plans__title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans__title h2{
+    padding-top:50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans__title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container__slider{
+    display: flex;
+    gap: 30px;
+    padding: 0 40px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container__slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans-container__slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+.plans-container__card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container__card .recommended{
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -16px;
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.plans-container__card .plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plans-container__card .plan-card__price{
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card__price sup {
+    position: absolute;
+    top: -7px;
+    left: calc(50% - 44px);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card-saving{
+    font-size: 1.2rem;
+    color: var(--grey);
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer section ul{
+    list-style: none;
+    display: flex;
+}
+.footer__img{
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+.footer__logo{
+    height: 60px;
+    width: 60px;
+}
+
+@media (min-width: 750px) {
+    .plans-container__slider::-webkit-scrollbar {
+      display: none;
+    }
+    .main-tables-container::-webkit-scrollbar{
+        display: none;
+    }
+    .footer__logo{
+        height: 80px;
+        width: 80px;
+    }
+    .footer__img{
+        height: 40px;
+        width: 40px;
+        margin: 0 10px;
+    }
+  }
