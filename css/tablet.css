@@ -1,8 +1,14 @@
 .plans-container__slider::-webkit-scrollbar {
 display: none;
 }
+.main-tables-container{
+    justify-content: center;
+}
 .main-tables-container::-webkit-scrollbar{
     display: none;
+}
+.main-container__card{
+    width: 300px;
 }
 .footer__logo{
     height: 80px;
