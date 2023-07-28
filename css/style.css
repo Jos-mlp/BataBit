@@ -243,7 +243,9 @@ main{
     
 }
 .main-commisions-table{
+    box-sizing: inherit;
     margin-bottom: 80px;
+    margin-right: 40px;
 }
 .main-commisions-table .commisions__table--title{
 
